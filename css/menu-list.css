@@ -1,0 +1,55 @@
+.menu-icon {
+    color: blue;
+    margin-left: 10px;
+}
+
+.menu-text:hover {
+    color: blue;
+}
+
+.menu-all {
+    padding: 10px;    
+}
+
+.menu-section {
+    border-top: solid lightgrey 1px;       
+}
+
+.menu-border {
+    border-bottom: solid lightgrey 1px;
+    width: 103%;    
+}
+
+
+@media (min-width:760px) {
+    .menu-border {
+        border-bottom: none;
+    }
+
+    .menu-section {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        border-top: none;
+        margin-right: 10px;
+        margin-left: -10px;        
+    }
+
+    .menu-all {
+        border: solid lightgrey 1px;
+        width: 93%;
+        
+    }
+}
+
+@media (min-width:1024px) {
+    .menu-section {
+        max-width: 37%;
+        margin-bottom: 15px;
+        flex-direction: row;
+        
+    }
+}
+
+
+
+

@@ -1,0 +1,38 @@
+#header {
+    background-color: #777c83;
+    width: auto;
+    max-width: 1920px !important;
+}
+
+.icon-sm { font-size: smaller;}
+.icon-lg { font-size: xx-large;}
+
+.bg-steel{ background-color: #777c83;}
+.btn-steel { background-color: #777c83;}
+
+a {
+    text-decoration: none;
+}
+
+.letter-icon {
+    margin-top: 2px;
+}
+
+@media (min-width: 570px) {
+    .icon-p {
+        padding-right: 10px;
+    }
+}
+
+
+
+@media (min-width: 760px) {
+    .phone-email-text {
+        font-size: 15pt;
+    }
+}
+
+
+
+
+

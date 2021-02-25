@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Store</title>
+
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f4bf10d3c2.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+
+    <link href="css/header.css" type="text/css" rel="stylesheet"/>
+    <link href="css/heading.css" type="text/css" rel="stylesheet"/>
+    <link href="css/under-header.css" type="text/css" rel="stylesheet"/>
+    <link href="css/meny.css" type="text/css" rel="stylesheet"/>
+    <link href="css/menu-list.css" type="text/css" rel="stylesheet"/>
+    <link href="css/products.css" type="text/css" rel="stylesheet"/>
+    <link href="css/dropdown.css" type="text/css" rel="stylesheet"/>
+
+</head>
+<body>
+    <header>
+        
+        <!-- Header -->
+        <section id="header" class="d-flex flex-row justify-content-between px-2">
+            <!-- Dropdown Customer-->
+            <div class="dropdown-button justify-content-center align-items-center">
+                <button id="dropdown" type="button" class="btn dropbtn justify-content-center align-items-center">
+                  <i class="customer-icon fa fa-user-astronaut icon-sm"></i>
+                    <span class="dropdown-name d-none d-sm-flex">Jack Doe</span>
+                    <span class="fa fa-sort-down dropdown-arrow"></span>
+                </button>
+                <div id="dropdown-menu" class="dropdown-content">
+                  <a class="dropdown-item" href="#">Jane Doe</a>
+                  <a class="dropdown-item" href="#">Jennifer Doe</a>
+                  <a class="dropdown-item" href="#">John Doe</a>
+                </div>
+            </div>
+
+            <!-- Phone and Email-->
+            <div class="phone-email-text flex-row text-white justify-content-center align-items-center">
+                <div class="d-none d-lg-flex float-left mt-3 justify-content-center align-items-center">
+                    <i class="fa fa-phone-alt mx-1"></i>
+                    <span>010-555 666 777</span>
+                </div>
+                <div class="d-none d-md-flex mt-3 mb-3 justify-content-center align-items-center">
+                    <i class="fa fa-envelope mx-1 letter-icon"></i>
+                    <span>info@webshop.vg</span>
+                </div>
+            </div>
+
+            <!-- Icons-->
+            <div id="icons-social" class="d-flex flex-column justify-content-center align-items-center">
+                <div class="d-flex flex-row">                
+                    <a class="fa fa-facebook-square icon-lg mr-1 text-white" href="#"></a>
+                    <a class="fa fa-twitter-square icon-lg mr-1 text-white" href="#"></a>
+                    <a class="fab fa-instagram-square icon-lg mr-1 text-white" href="#"></a>
+                    <a class="fa fa-pinterest-square icon-p icon-lg mr-1 text-white pin-icon" href="#"></a>
+                </div>
+            </div>
+        </section>
+    </header>
+
+        <!-- Under Header -->  
+        <!-- Logo only xs -->
+        <section class="d-flex flex-row justify-content-center align-items-center mt-2 d-block d-sm-none">
+            <img id="img-logo" src="images/logo.png">
+        </section>
+        
+        <section class="under-header-div d-flex flex-row align-items-center">
+            <!-- Logo -->
+            <div class="logo-div flex-column justify-content-center align-items-center d-none d-sm-block">
+                <img id="img-logo" src="images/logo.png">
+            </div>
+        
+            <!-- Search big -->
+            <div class="search-big flex-row align-items-center d-none d-md-flex">
+                <div class="flex-row justify-content-center align-items-center">
+                    <!-- Search button -->
+                    <button id="button-search" class="btn justify-content-center align-items-center">
+                        <i class="fa fa-search icon-sm search-icon"></i>
+                    </button>
+                </div>
+                <!-- Search form -->
+                <div>   
+                    <form id="form-big" class="align-items-center">
+                        <input type="text" id="form" class="form-control" placeholder="Search products">
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Icons -->            
+            <div id="icons" class="d-flex flex-row justify-content-center align-items-center mt-1">
+                <div class="hamburger-menu icon flex-column justify-content-center align-items-center">
+                    <button class="btn meny-button">
+                        <i class="fa fa-bars icon-size"></i>
+                        <div>MENU</div>
+                    </button>
+                </div>
+
+                <div class="icon flex-column justify-content-center align-items-center position-relative">
+                     <button class="btn">   
+                        <i class="fa fa-heart icon-size shopping-icon"></i>
+                        <span class="badge icon-badge bg-success text-white border border-white justify-content-center align-items-center position-absolute">3</span>
+                        <div>FAVS</div>
+                    </button>
+                </div>                
+
+                <div class="icon flex-column justify-content-center align-items-center">
+                    <button class="btn position-relative">   
+                       <i class="fa fa-shopping-cart icon-size shopping-icon"></i>
+                       <span class="badge icon-badge-2 bg-success text-white border border-white position-absolute">2</span>
+                       <div>$1234.5</div>
+                   </button>
+               </div>
+
+               <div class="flex-column justify-content-center align-items-center">
+                    <button class="btn position-relative">   
+                        <i class="fa fa-file-invoice-dollar icon-size shopping-icon"></i>
+                        <span class="badge icon-badge-3 bg-success text-white border border-white position-absolute">0</span>
+                        <div>$00.0</div>
+                    </button>
+                </div>
+            </div>            
+        </section>
+        
+        <!-- Search small -->
+        <section class="search-small d-flex flex-row d-block d-md-none">                      
+            <div class="flex-row justify-content-center align-items-center">
+                <!-- Search button -->
+                <button id="button-search" class="btn justify-content-center align-items-center">
+                    <i class="fa fa-search icon-sm search-icon"></i>
+                </button>
+            </div>
+            <!-- Search form -->
+            <form class="flex-row justify-content-center align-items-center">
+                <input type="text" id="form" class="form-control" placeholder="Search products">
+            </form>
+        </section>
+
+        <!-- Border -->
+        <div class="border-1 d-none d-lg-block"></div>
+ 
+        <!-- Meny Products-->
+        <section class="menu-section d-flex flex-column justify-content-center align-items-center">
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-hdd menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Computers & Accessories</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-desktop menu-icon icon-lg"></i>
+                <span class="menu-text display-9">TV, Video & Audio</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-mobile-alt menu-icon icon-lg"></i>
+                <span class="menu-text display-9 ml-2">Smartphones & Tablets</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-camera-retro menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Photo Cameras</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-video menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Video Cameras</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-headphones menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Headphones</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-clock menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Wearable Electronics</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-images menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Printers & Ink</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-crosshairs menu-icon icon-lg"></i>
+                <span class="menu-text display-9">Video Games</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-volume-down menu-icon icon-lg"></i>
+                <span class="menu-text display-9 ml-1">Speakers & Home Music</span>
+            </div>
+
+            <div class="menu-all menu-border flex-row justify-content-center align-items-center">
+                <i class="fa fa-server menu-icon icon-lg"></i>
+                <span class="menu-text display-9">HDD / SSD Data Storage</span>
+            </div>
+        
+
+        <!-- Product cards-->
+        
+            <!-- Product Container -->
+            <div class="product-container d-flex flex-column">
+               <!-- Product cards -->
+                <div class="product-cards d-flex flex-column"> 
+                    <!-- Product Card 1-->
+                    <div class="product-card flex-column">
+                        
+                        <div class="product-div mb-3">
+                            <div class="product-image-div"><img src="images/products/SurfaceBook.jpg" class="product-image"></div>
+                            <div class="product-description flex-column p-3">                    
+                                <div class="product-h1-text display-7">Surface Book 14 in.</div>
+                                <div><a class="far fa-heart icon-lg icon-heart" href="#"></a></div>
+                                                
+                                <div class="card-text display-8 mb-2">Computers & Accessories</div>
+                                <div class="card-text display-8 mb-2">$1234.5</div>
+                                <div class="text-lorum display-9 mb-4">Eos iusto ipsam, deleniti nobis id vitae vero, quo ducimus itaque autem vel.</div>
+                                <div class="product-icons flex-row">
+                                    <div><a class="fa fa-cart-plus cart-button icon-lg" href="#"></a></div>
+                                    <div class="star-rating align-items-center">                                           
+                                        <span class="display-8 rating">4.5</span><i class="far fa-star star-icon icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </div>
+
+                    <!-- Product Card 2-->
+                    <div class="product-card flex-column">
+                        
+                        <div class="product-div mb-3">
+                            <div class="product-image-div"><img src="images/products/SurfaceBook.jpg" class="product-image"></div>
+                            <div class="product-description flex-column p-3">                    
+                                <div class="flex-row product-h1-text display-7">Surface Book 2 14 in.</div>
+                                <div><a class="far fa-heart icon-lg icon-heart" href="#"></a></div>
+                                                    
+                                <div class="card-text display-8 mb-2">Computers & Accessories</div>
+                                <div class="card-text display-8 mb-2">$2345.6</div>
+                                <div class="text-lorum display-9 mb-4">Eos iusto ipsam, deleniti nobis id vitae vero, quo ducimus itaque autem vel.</div>
+                                <div class="product-icons flex-row">
+                                    <div><a class="fa fa-cart-plus cart-button icon-lg" href="#"></a></div>
+                                    <div class="star-rating align-items-center">                                           
+                                        <span class="display-8 rating">3</span><i class="far fa-star star-icon icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                        
+                    </div>
+
+                    <!-- Product Card 3-->
+                    <div class="product-card flex-column">
+                        
+                        <div class="product-div mb-3">
+                            <div class="product-image-div"><img src="images/products/MSMouse.jpg" class="product-image"></div>
+                            <div class="product-description flex-column p-3">                    
+                                <div class="product-h1-text display-7">Surface Book 14 in.</div>
+                                <div><a class="far fa-heart icon-lg icon-heart" href="#"></a></div>
+                                                
+                                <div class="card-text display-8 mb-2">Computers & Accessories</div>
+                                <div class="card-text display-8 mb-2">$160</div>
+                                <div class="text-lorum display-9 mb-4">Eos iusto ipsam, deleniti nobis id vitae vero, quo ducimus itaque autem vel.</div>
+                                <div class="product-icons flex-row">
+                                    <div><a class="fa fa-cart-plus cart-button icon-lg" href="#"></a></div>
+                                    <div class="star-rating align-items-center">                                           
+                                        <span class="display-8 rating">4</span><i class="far fa-star star-icon icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Product Card 4-->
+                    <div class="product-card flex-column">
+                        
+                        <div class="product-div mb-3">
+                            <div class="product-image-div"><img src="images/products/SurfaceBook.jpg" class="product-image"></div>
+                            <div class="product-description flex-column p-3">                    
+                                <div class="product-h1-text display-7">Asus Laptop</div>
+                                <div><a class="far fa-heart icon-lg icon-heart" href="#"></a></div>
+                                                
+                                <div class="card-text display-8 mb-2">Computers & Accessories</div>
+                                <div class="card-text display-8 mb-2">$1171.5</div>
+                                <div class="text-lorum display-9 mb-4">Eos iusto ipsam, deleniti nobis id vitae vero, quo ducimus itaque autem vel.</div>
+                                <div class="product-icons flex-row">
+                                    <div><a class="fa fa-cart-plus cart-button icon-lg" href="#"></a></div>
+                                    <div class="star-rating align-items-center">                                           
+                                        <span class="display-8 rating">3.5</span><i class="far fa-star star-icon icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Product Card 5-->
+                    <div class="product-card flex-column">
+                        
+                        <div class="product-div mb-3">
+                            <div class="product-image-div"><img src="images/products/iMac.jpg" class="product-image"></div>
+                            <div class="product-description flex-column p-3">                    
+                                <div class="product-h1-text display-7">iMac 18 in.</div>
+                                <div><a class="far fa-heart icon-lg icon-heart" href="#"></a></div>
+
+                                <div class="card-text display-8 mb-2">Computers & Accessories</div>
+                                <div class="card-text display-8 mb-2">$2674.5</div>
+                                <div class="text-lorum display-9 mb-4">Eos iusto ipsam, deleniti nobis id vitae vero, quo ducimus itaque autem vel.</div>
+                                <div class="product-icons flex-row">
+                                    <div><a class="fa fa-cart-plus cart-button icon-lg" href="#"></a></div>
+                                    <div class="star-rating align-items-center">                                           
+                                        <span class="display-8 rating">3.5</span><i class="far fa-star star-icon icon-lg"></i>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </section>        
+        
+</body>
+</html>

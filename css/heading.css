@@ -1,0 +1,25 @@
+.heading-font { font-family: 'Hind', sans-serif;}
+
+
+.display-7 {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.85rem;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+.display-8 {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    
+}
+
+.display-9 {
+    font-family: 'Hind', sans-serif;
+    font-size: 1.3rem;
+    font-weight: lighter;
+    line-height: 1.2;
+}

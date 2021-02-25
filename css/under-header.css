@@ -1,0 +1,139 @@
+
+#img-logo {
+    max-width: 100px;
+    align-items: center;
+    justify-items: center;
+    padding: .5rem;       
+}
+
+.icon-size {
+    font-size: 1.5em;
+}
+
+/* .icons {
+    padding-left: 50px;
+} */
+
+.hamburger-menu {
+    margin-left: 35px;
+}
+
+.shopping-icon {
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-badge {
+    padding: .35em .5em;
+    border-radius: 100%;
+    top: -1px !important;
+    right: 4px !important;
+}
+
+.icon-badge-2 {
+    padding: .35em .5em;
+    border-radius: 100%;
+    top: -1px !important;
+    right: 10px !important;
+}
+
+.icon-badge-3 {
+    padding: .35em .5em;
+    border-radius: 100%;
+    top: -1px !important;
+    right: 8px !important;
+}
+
+.icon {
+    border-right: 1px solid lightgray;
+}
+
+#button-search {
+    border: none;
+    border-radius: 0%;
+    height: 30px;
+    width: 30px;
+    margin-right: 12px;
+    margin-bottom: 21px;
+    margin-top: 3.5px;
+    justify-content: center;
+    align-items: center;    
+}
+
+.search-icon {
+    background-color: lightgray;
+    width: 30px;
+    height: 30px;
+    padding-top: 9px;            
+}
+
+#form {
+    border-radius: 0%;
+    height: 30px;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 12px;
+    border-color: lightgrey;     
+}
+
+.border-1 {
+    border-bottom: 2px solid lightgray;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 576px) {
+    #img-logo { 
+        margin-top: 20px; 
+        margin-left: 70px;       
+    }
+
+    #form {
+        width: 575px;
+    }
+
+    #button-search {
+        margin-top: 4px;
+    }
+}
+
+@media (min-width: 760px) {
+    #img-logo {
+        max-width: 130px;
+        margin-left: 20px;
+    }   
+    
+    .search-big  #button-search {
+        padding-top: 18px;
+        } 
+    
+    .search-big #form {
+        width: 250px;
+        max-width: 250px;
+        padding-top: 10px; 
+        margin-top: 18px;                               
+    }   
+
+    .hamburger-menu {
+        margin-left: 0px;
+    }
+} 
+
+@media (min-width: 1024px) {
+    .hamburger-menu {
+        display: none;
+    }
+
+    .search-big #form {
+        width: 570px;
+        max-width: 570px;                
+    }   
+}
+
+@media (min-width: 1300px) {
+    .search-big #form {
+        width: 900px;
+        max-width: 900px;                          
+    }   
+}
